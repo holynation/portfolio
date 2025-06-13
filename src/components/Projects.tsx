@@ -12,8 +12,6 @@ interface Project {
   longDescription: string;
   image: string;
   technologies: string[];
-  liveUrl: string;
-  githubUrl: string;
   category: string;
   date: string;
   team: string;
@@ -31,9 +29,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
       description: 'Automated AWS infrastructure deployment using Terraform and CI/CD pipelines.',
       longDescription: 'A comprehensive cloud infrastructure automation solution that streamlines the deployment and management of AWS resources. This project implements Infrastructure as Code (IaC) principles using Terraform, with automated CI/CD pipelines for seamless deployments.',
       image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['AWS', 'Terraform', 'Jenkins', 'Docker', 'Python'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      technologies: ['AWS', 'Terraform', 'Ansible', 'Docker', 'Python'],
       category: 'DevOps',
       date: '2024',
       team: 'Solo Project',
@@ -42,23 +38,20 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
         'Multi-environment support',
         'Cost optimization monitoring',
         'Security compliance automation',
-        'Disaster recovery implementation'
       ]
     },
     {
       id: 2,
-      title: 'Microservices E-commerce Platform',
+      title: 'E-commerce Platform',
       description: 'Scalable e-commerce platform built with microservices architecture and containerized deployment.',
       longDescription: 'A modern e-commerce platform designed with microservices architecture, featuring independent services for user management, product catalog, order processing, and payment handling. Built for scalability and high availability.',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['Node.js', 'React', 'MongoDB', 'Docker', 'Kubernetes'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      technologies: ['Laravel', 'Vuejs', 'Mysql', 'Docker', 'Kubernetes', 'Laravel-Envoy'],
       category: 'Full Stack',
-      date: '2023',
+      date: '2024',
       team: '4 Developers',
       features: [
-        'Microservices architecture',
+        'Monolith architecture',
         'Real-time inventory management',
         'Payment gateway integration',
         'Advanced search and filtering',
@@ -67,22 +60,22 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
     },
     {
       id: 3,
-      title: 'AI-Powered Analytics Dashboard',
-      description: 'Real-time analytics dashboard with machine learning insights and predictive analytics.',
-      longDescription: 'An intelligent analytics dashboard that leverages machine learning algorithms to provide real-time insights and predictive analytics. Features automated report generation and anomaly detection.',
+      title: 'Restaurant Point of Sale System',
+      description: 'Streamlined ordering and sales tracking',
+      longDescription: 'A full-featured restaurant POS system designed to simplify order management, inventory tracking, and customer transactions. Includes real-time sales reporting, staff performance analytics, kitchen display integration, and mobile ordering support. Built with a scalable architecture for both small eateries and large chains.',
       image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['Python', 'React', 'TensorFlow', 'PostgreSQL', 'Redis'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
-      category: 'Data Science',
-      date: '2023',
-      team: '3 Developers',
+      technologies: ['Codeigniter', 'Bootstrap', 'Mysql', 'Redis'],
+      category: 'Full Stack',
+      date: '2024',
+      team: '2 Developers',
       features: [
-        'Real-time data visualization',
-        'Machine learning predictions',
-        'Automated anomaly detection',
-        'Custom dashboard builder',
-        'Export and scheduling features'
+        'Order and table management',
+        'Real-time sales analytics',
+        'Inventory and stock alerts',
+        'Kitchen display system (KDS)',
+        'Receipt printing and e-receipts',
+        'Staff role and shift management',
+        'Customer loyalty and feedback module'
       ]
     },
     {
@@ -91,9 +84,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
       description: 'Comprehensive monitoring and alerting system for containerized applications.',
       longDescription: 'A complete monitoring solution designed for containerized environments, providing comprehensive observability through metrics, logs, and traces. Includes intelligent alerting and automated incident response.',
       image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['Prometheus', 'Grafana', 'Kubernetes', 'Go', 'ELK Stack'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      technologies: ['Prometheus', 'Grafana', 'Kubernetes', 'Python', 'ELK Stack'],
       category: 'DevOps',
       date: '2024',
       team: '2 Developers',
@@ -107,22 +98,22 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
     },
     {
       id: 5,
-      title: 'Serverless Task Management API',
-      description: 'High-performance task management API built with serverless architecture on AWS.',
-      longDescription: 'A robust task management API leveraging AWS serverless services for maximum scalability and cost efficiency. Features real-time notifications and advanced task scheduling capabilities.',
+      title: 'Task Management API (Laravel Stack)',
+      description: 'Robust task management API built with Laravel and real-time capabilities.',
+      longDescription: 'A powerful task management API developed using the Laravel framework. Supports real-time task updates, advanced scheduling, team collaboration, and user notifications. Built with RESTful architecture and optimized for both web and mobile integration. Utilizes Laravel Echo and broadcasting for real-time updates.',
       image: 'https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['AWS Lambda', 'DynamoDB', 'API Gateway', 'TypeScript', 'CDK'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      technologies: ['Laravel', 'MySQL', 'Redis', 'Pusher', 'Sanctum'],
       category: 'Backend',
       date: '2023',
       team: 'Solo Project',
       features: [
-        'Serverless architecture',
-        'Real-time notifications',
-        'Advanced task scheduling',
-        'Team collaboration features',
-        'Mobile-responsive design'
+        'RESTful API endpoints',
+        'Real-time task updates with Laravel Echo',
+        'Task scheduling and reminders',
+        'Team-based task assignments',
+        'Notification system (email & push)',
+        'Mobile-responsive integration',
+        'Authentication with Laravel Sanctum'
       ]
     },
     {
@@ -132,8 +123,6 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
       longDescription: 'A well-documented, accessible React component library that implements a complete design system. Features TypeScript support, comprehensive testing, and Storybook documentation.',
       image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600',
       technologies: ['React', 'TypeScript', 'Storybook', 'Jest', 'Rollup'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
       category: 'Frontend',
       date: '2024',
       team: 'Solo Project',
@@ -147,7 +136,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
     }
   ];
 
-  const categories = ['All', 'DevOps', 'Full Stack', 'Frontend', 'Backend', 'Data Science'];
+  const categories = ['All', 'DevOps', 'Full Stack', 'Frontend', 'Backend'];
 
   const filteredProjects = filter === 'All' 
     ? projects 
@@ -257,32 +246,6 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
                       </span>
                     )}
                   </div>
-                  <div className="flex space-x-4">
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex items-center text-sm font-medium transition-colors duration-200 ${
-                        darkMode ? 'text-amber-400 hover:text-amber-300' : 'text-amber-700 hover:text-amber-800'
-                      }`}
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <ExternalLink size={16} className="mr-1" />
-                      Live Demo
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex items-center text-sm font-medium transition-colors duration-200 ${
-                        darkMode ? 'text-stone-400 hover:text-stone-300' : 'text-stone-600 hover:text-stone-700'
-                      }`}
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <Github size={16} className="mr-1" />
-                      Code
-                    </a>
-                  </div>
                 </div>
               </div>
             ))}
@@ -290,7 +253,6 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
         </div>
       </section>
 
-      {/* Modal */}
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-75">
           <div className={`max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-xl ${
@@ -344,30 +306,6 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
                   }`}>
                     {selectedProject.team}
                   </span>
-                </div>
-                <div className="flex space-x-4">
-                  <a
-                    href={selectedProject.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center font-medium transition-colors duration-200 ${
-                      darkMode ? 'text-amber-400 hover:text-amber-300' : 'text-amber-700 hover:text-amber-800'
-                    }`}
-                  >
-                    <ExternalLink size={16} className="mr-1" />
-                    Live Demo
-                  </a>
-                  <a
-                    href={selectedProject.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center font-medium transition-colors duration-200 ${
-                      darkMode ? 'text-stone-400 hover:text-stone-300' : 'text-stone-600 hover:text-stone-700'
-                    }`}
-                  >
-                    <Github size={16} className="mr-1" />
-                    Code
-                  </a>
                 </div>
               </div>
 

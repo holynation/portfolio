@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, X } from 'lucide-react';
 
 interface ContactProps {
   darkMode: boolean;
@@ -43,19 +43,19 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'john@example.com',
-      href: 'mailto:john@example.com'
+      value: 'oluwaseunalatise667@gmail.com',
+      href: 'mailto:oluwaseunalatise667@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+234 706 462 5478',
+      href: 'tel:+2347064625478'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'University of Ibadan, Nigeria',
       href: '#'
     }
   ];
@@ -64,19 +64,19 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com',
+      href: 'https://github.com/holynation',
       color: darkMode ? 'hover:text-stone-300' : 'hover:text-stone-900'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/oluwaseun-alatise-008366139/',
       color: darkMode ? 'hover:text-amber-400' : 'hover:text-amber-700'
     },
     {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com',
+      icon: X,
+      label: 'X',
+      href: 'https://x.com/Alat_Oluwaseun',
       color: darkMode ? 'hover:text-amber-400' : 'hover:text-amber-700'
     }
   ];
@@ -173,7 +173,6 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
             </div>
           </div>
 
-          {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className={`p-8 rounded-xl ${
               darkMode 

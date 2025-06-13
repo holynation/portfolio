@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import myImage from '../images/profile.jpg';
 
 interface HeroProps {
   darkMode: boolean;
@@ -23,20 +24,20 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             <div className={`w-32 h-32 rounded-full mx-auto mb-8 ${
               darkMode ? 'bg-gradient-to-r from-amber-600 to-orange-600' : 'bg-gradient-to-r from-amber-700 to-orange-700'
             } flex items-center justify-center text-white text-4xl font-bold shadow-2xl`}>
-              JD
+              <img src={myImage} alt="OA Image" className="rounded-full w-full h-full object-cover" />
             </div>
           </div>
           
           <h1 className={`text-5xl md:text-7xl font-bold mb-6 ${
             darkMode ? 'text-stone-100' : 'text-stone-800'
           }`}>
-            <span className="font-serif">John</span>{' '}
-            <span className={`${darkMode ? 'text-amber-400' : 'text-amber-700'}`}>Doe</span>
+            <span className="font-serif">Oluwaseun</span>{' '}
+            <span className={`${darkMode ? 'text-amber-400' : 'text-amber-700'}`}>Alatise</span>
           </h1>
           
-          <p className={`text-xl md:text-2xl mb-4 ${
-            darkMode ? 'text-stone-300' : 'text-stone-700'
-          }`}>
+          <p className={`inline-block px-3 py-1 mb-4 rounded-full text-sm font-medium ${
+              darkMode ? 'bg-amber-700 text-stone-100' : 'bg-amber-600 text-white'
+            }`}>
             Software Engineer & Cloud DevOps Specialist
           </p>
           
@@ -49,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
 
           <div className="flex justify-center space-x-6 mb-12">
             <a
-              href="https://github.com"
+              href="https://github.com/holynation/"
               target="_blank"
               rel="noopener noreferrer"
               className={`p-3 rounded-full transition-all duration-300 transform hover:scale-110 ${
@@ -61,7 +62,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/oluwaseun-alatise-008366139"
               target="_blank"
               rel="noopener noreferrer"
               className={`p-3 rounded-full transition-all duration-300 transform hover:scale-110 ${
@@ -73,7 +74,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:john@example.com"
+              href="mailto:oluwaseunalatise667@gmail.com"
               className={`p-3 rounded-full transition-all duration-300 transform hover:scale-110 ${
                 darkMode 
                   ? 'bg-stone-800 hover:bg-stone-700 text-stone-300 hover:text-white' 

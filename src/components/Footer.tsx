@@ -39,17 +39,12 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
               }`} 
               fill="currentColor"
             />
-            <span className={`text-sm ${
-              darkMode ? 'text-stone-400' : 'text-stone-600'
-            }`}>
-              and lots of coffee
-            </span>
           </div>
 
           <div className={`text-sm ${
             darkMode ? 'text-stone-500' : 'text-stone-500'
           }`}>
-            © {currentYear} John Doe. All rights reserved.
+            © {currentYear} Oluwaseun Alatise. All rights reserved.
           </div>
         </div>
       </div>

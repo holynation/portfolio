@@ -11,60 +11,61 @@ const Skills: React.FC<SkillsProps> = ({ darkMode }) => {
       icon: Code,
       title: 'Programming Languages',
       skills: [
-        { name: 'JavaScript/TypeScript', level: 95 },
-        { name: 'Python', level: 90 },
-        { name: 'Java', level: 85 },
-        { name: 'Go', level: 80 },
+        { name: 'JavaScript/TypeScript', level: 80 },
+        { name: 'Php', level: 95 },
+        { name: 'Python', level: 50 },
+        { name: 'HTML/CSS', level: 90 },
       ]
     },
     {
       icon: Cloud,
       title: 'Cloud Platforms',
       skills: [
-        { name: 'AWS', level: 92 },
-        { name: 'Azure', level: 88 },
-        { name: 'Google Cloud', level: 85 },
-        { name: 'Kubernetes', level: 90 },
+        { name: 'AWS', level: 45 },
+        { name: 'Azure', level: 20 },
+        { name: 'Google Cloud', level: 40 },
+        { name: 'Kubernetes', level: 30 },
       ]
     },
     {
       icon: Database,
       title: 'Databases',
       skills: [
-        { name: 'PostgreSQL', level: 90 },
-        { name: 'MongoDB', level: 88 },
-        { name: 'Redis', level: 85 },
-        { name: 'DynamoDB', level: 82 },
+        { name: 'Mysql', level: 80 },
+        { name: 'PostgreSQL', level: 60 },
+        { name: 'MongoDB', level: 50 },
+        { name: 'Redis', level: 60 },
+        
       ]
     },
     {
       icon: Settings,
       title: 'DevOps Tools',
       skills: [
-        { name: 'Docker', level: 95 },
-        { name: 'Terraform', level: 90 },
-        { name: 'Jenkins', level: 88 },
-        { name: 'Ansible', level: 85 },
+        { name: 'Docker', level: 60 },
+        { name: 'Terraform', level: 20 },
+        { name: 'Jenkins', level: 20 },
+        { name: 'Ansible', level: 40 },
       ]
     },
     {
       icon: GitBranch,
       title: 'Frameworks',
       skills: [
-        { name: 'React/Next.js', level: 95 },
-        { name: 'Node.js', level: 92 },
-        { name: 'Django', level: 88 },
-        { name: 'Spring Boot', level: 85 },
+        { name: 'Laravel', level: 80 },
+        { name: 'Codeigniter', level: 90 },
+        { name: 'React/Next.js', level: 70 },
+        { name: 'Node.js', level: 60 },
       ]
     },
     {
       icon: Shield,
       title: 'Security & Monitoring',
       skills: [
-        { name: 'OAuth/JWT', level: 90 },
-        { name: 'Prometheus', level: 88 },
-        { name: 'Grafana', level: 86 },
-        { name: 'ELK Stack', level: 84 },
+        { name: 'OAuth/JWT', level: 70 },
+        { name: 'Prometheus', level: 20 },
+        { name: 'Grafana', level: 20 },
+        { name: 'ELK Stack', level: 10 },
       ]
     },
   ];

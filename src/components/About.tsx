@@ -8,9 +8,9 @@ interface AboutProps {
 const About: React.FC<AboutProps> = ({ darkMode }) => {
   const stats = [
     { icon: Clock, label: 'Years Experience', value: '5+' },
-    { icon: Target, label: 'Projects Completed', value: '50+' },
-    { icon: Users, label: 'Happy Clients', value: '30+' },
-    { icon: Award, label: 'Certifications', value: '8' },
+    { icon: Target, label: 'Projects Completed', value: '15+' },
+    { icon: Users, label: 'Happy Clients', value: '20+' },
+    { icon: Award, label: 'Certifications', value: '3' },
   ];
 
   return (
@@ -36,7 +36,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
             <p className={`text-lg leading-relaxed ${
               darkMode ? 'text-stone-300' : 'text-stone-700'
             }`}>
-              With over 5 years of experience in software engineering and cloud infrastructure, I specialize in building scalable, 
+              With over 5 years of experience in software engineering and 2+ years in cloud infrastructure, I specialize in building scalable, 
               reliable systems that power modern applications. My journey began with a fascination for problem-solving, 
               which has evolved into a career dedicated to crafting elegant solutions for complex challenges.
             </p>
@@ -100,7 +100,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
             darkMode ? 'text-stone-300' : 'text-stone-700'
           }`}>
             "Great software is not just about writing code—it's about understanding problems deeply, 
-            designing thoughtful solutions, and creating systems that stand the test of time. 
+            designing thoughtful solutions, and creating resilient systems that stand the test of time. 
             I believe in the power of continuous learning, collaboration, and the relentless pursuit of excellence."
           </p>
         </div>
