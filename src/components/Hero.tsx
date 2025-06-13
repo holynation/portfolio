@@ -1,6 +1,5 @@
 import React from 'react';
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
-import myImage from '../images/profile.jpg';
 
 interface HeroProps {
   darkMode: boolean;
@@ -24,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             <div className={`w-32 h-32 rounded-full mx-auto mb-8 ${
               darkMode ? 'bg-gradient-to-r from-amber-600 to-orange-600' : 'bg-gradient-to-r from-amber-700 to-orange-700'
             } flex items-center justify-center text-white text-4xl font-bold shadow-2xl`}>
-              <img src={myImage} alt="OA Image" className="rounded-full w-full h-full object-cover" />
+              <img src="/images/profile.jpg" alt="OA Image" className="rounded-full w-full h-full object-cover" />
             </div>
           </div>
           
