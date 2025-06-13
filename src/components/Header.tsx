@@ -56,7 +56,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <span className={`text-xl font-bold ${darkMode ? 'text-stone-100' : 'text-stone-800'}`}>
-              Portfolio
+              
             </span>
           </div>
 
