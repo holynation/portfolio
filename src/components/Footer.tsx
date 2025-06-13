@@ -17,7 +17,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
           <div className={`text-2xl font-bold mb-4 ${
             darkMode ? 'text-stone-100' : 'text-stone-800'
           }`}>
-            John <span className={darkMode ? 'text-amber-400' : 'text-amber-700'}>Doe</span>
+            Oluwaseun <span className={darkMode ? 'text-amber-400' : 'text-amber-700'}>Alatise</span>
           </div>
           
           <p className={`mb-6 ${
