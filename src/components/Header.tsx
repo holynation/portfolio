@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
     { name: 'About', href: '#about' },
     { name: 'Project Idea', href: '#project-idea' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
+    { name: 'Past Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
 
